@@ -1,0 +1,26 @@
+class Frame
+{
+  public static void main (String[]args)
+  {
+    Scanner sc = new Scanner (System.in);
+    int n;
+      ArrayList < Integer > x1 = new ArrayList < Integer > ();
+      System.out.print ("ENTER N VALUE:");
+      n = sc.nextInt ();
+    for (int i = 0; i < n; i++)
+      {
+	if (x1.contains (sc.nextInt ()))
+	  System.out.println (x1.set (i, 99));
+	else
+	  System.out.println ("FALSE");
+      }
+  }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+OUTPUT:
+C:\Users\hp>javac Frame.java
+C:\Users\hp>java Frame
+ENTER N VALUE:5
+10 20 30 40 50
+60
+FALSE
